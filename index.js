@@ -5,7 +5,7 @@ import { readSourceFiles } from "./lib/source.js";
 import { encodeSize } from "./lib/tokens.js";
 
 const README_PROMPT_SIZE_ESTIMATE = encodeSize(readmePrompt('example', 'github.com/abc/def-ghi-jkl'));
-const README_RESPONSE_ESTIMATE = parseInt(process.env.README_RESPONSE_TOKEN_ESTIMATE, 10);  // We want about 1000 tokens back for a nice README.
+const README_RESPONSE_ESTIMATE = parseInt(process.env.README_RESPONSE_ESTIMATE, 10);  // We want about 1000 tokens back for a nice README.
 const README_PROMPT_BUFFER = README_PROMPT_SIZE_ESTIMATE + README_RESPONSE_ESTIMATE;
 
 const args = [...process.argv].splice(2);

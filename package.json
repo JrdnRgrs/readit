@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "@dqbd/tiktoken": "^1.0.7",
+    "dotenv": "^16.4.5",
     "glob-gitignore": "^1.0.14",
     "istextorbinary": "^6.0.0",
     "openai": "^3.2.1"
